@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="WGLogo.ico">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+      body {
+        font-family: "Sirin Stencil", sans-serif;
+        background: url("background.png") center/cover no-repeat fixed;
+      }
+      .container {
+        max-width: 400px;
+        margin-top: 100px;
+      }
+      .form-control:focus {
+        box-shadow: none;
+      }
+      .btn {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card bg-dark text-white">
+        <div class="card-body">
+          <h1 class="text-center mb-4">
+            <a class="text-decoration-none" href="index.html">
+              <img src="WGLogo.png" alt="WG Logo" width="50" />
+            </a>
+            <span style="color: #2056e0; font-weight: bolder;">Login</span>
+          </h1>
+          <form>
+            <div class="mb-3 input-group">
+              <span class="input-group-text bg-dark text-white"><i class="fa fa-user"></i></span>
+              <input type="text" class="form-control bg-dark text-white" placeholder="Username" required />
+            </div>
+            <div class="mb-3 input-group">
+              <span class="input-group-text bg-dark text-white"><i class="fa fa-lock"></i></span>
+              <input type="password" class="form-control bg-dark text-white" placeholder="Password" required />
+            </div>
+            <div class="mb-3">
+              <a href="#" class="text-decoration-none text-white">Forgot Password?</a>
+              <a href="Register.html" class="text-decoration-none text-white float-end">New User? Register here</a>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+          <hr class="text-white" />
+          <div class="text-center">
+            <h5 class="mb-3 text-white">Or Login with</h5>
+            <a href="#" class="mx-2 text-white"><i class="fab fa-google fa-2x"></i></a>
+            <a href="#" class="mx-2 text-white"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" class="mx-2 text-white"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WG Cinema Home Page</title>
+    <link rel="icon" type="image/x-icon" href="WGLogo.ico" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.theme.default.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+  </head>
+
+  <body style="transition: 0.5s;">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="theme.js"></script>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto text-light" href="index.html">
+            <img src="WGLogo.png" alt="" width="40px" />
+          </a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="UpcomingMovies.html">Phim Sắp Chiếu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="ShowingMovies.html">Phim Đang Chiếu</a>
+                </li>
+                <li class="nav-item align-self-center">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" checked id="flexSwitchCheckDefault" />
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Chế Độ Tối</label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div></div>
+          <a href="Login.html" class="login-button left-bt-login">Login</a>
+          <a href="Register.html" class="login-button right-bt-sign">Sign Up</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="content">
+      <div class="content1">
+        <!-- Slider1 -->
+        <script>
+          $(document).ready(function () {
+            $("#owl-carousel1").owlCarousel({
+              stagePadding: 200,
+              loop: true,
+              margin: 40,
+              nav: true,
+              navText: ['<i class="fa-solid fa-angle-left bg-primary"></i>', '<i class="fa-solid fa-angle-right bg-primary"></i>'],
+              dotsEach: true,
+              autoplay: true,
+              autoplayTimeout: 5000,
+              responsive: {
+                0: {
+                  items: 1,
+                  stagePadding: 0,
+                },
+                600: {
+                  items: 1,
+                  stagePadding: 0,
+                },
+                1000: {
+                  items: 1,
+                  stagePadding: 0,
+                },
+                1100: {
+                  items: 1,
+                  stagePadding: 100,
+                },
+                1360: {
+                  stagePadding: 200,
+                  items: 1,
+                },
+                1920: {
+                  stagePadding: 300,
+                  items: 1,
+                },
+              },
+            });
+          });
+        </script>
+        <div id="owl-carousel1" class="owl-carousel owl-theme">
+          <div class="item">
+            <h4><img src="owlcarousel/1.jpg" class="d-block" alt="" /></h4>
+          </div>
+          <div class="item">
+            <h4><img src="owlcarousel/2.jpg" class="d-block" alt="" /></h4>
+          </div>
+          <div class="item">
+            <h4><img src="owlcarousel/3.jpg" class="d-block" alt="" /></h4>
+          </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="slider2">
+          <div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img src="https://img.websosanh.vn/v10/users/review/images/71lfkzep6qyvw/cvdgvxp-770x403.jpg?compress=85" class="d-block" alt="" />
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="https://cdn.galaxycine.vn/media/2024/4/15/galaxy-da-co-1800x1200_1713168778020.jpg" class="d-block" alt="" />
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img src="https://promacprinting.com/wp-content/uploads/2020/10/in-voucher-rap-chieu-phim.jpg" class="d-block" alt="" />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider -->
+      </div>
+      <div class="content2 my-3 container">
+        <div class="row row1">
+          <div class="col">
+            <h2>Danh sách phim</h2>
+          </div>
+        </div>
+        <ul class="nav nav-underline mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Đang chiếu</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-sub-tab" data-bs-toggle="pill" data-bs-target="#pills-sub" type="button" role="tab" aria-controls="pills-sub" aria-selected="false">Sắp chiếu</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="row row2">
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="ShowingMovies\MAI.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Mai</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="ShowingMovies\KUNG FU PANDA 4.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Kung Fu Panda 4</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="ShowingMovies\ĐỀN MẠNG.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Đền Mạng</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="ShowingMovies\ĐIỀM BÁO CỦA QUỶ.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Điềm Báo Của Quỷ</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="ShowingMovies\ABIGAIL.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Abigail</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="ShowingMovies/THANH XUÂN 18x2 LỮ TRÌNH HƯỚNG VỀ EM.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Thanh Xuân 18x2: Lữ Trình Hướng Về Em</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="ShowingMovies\GODZILLA X KONG ĐẾ CHẾ MỚI.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Godzilla x Kong: Đế Chế Mới</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="ShowingMovies\EXHUMA QUẬT MỘ TRÙNG MA.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Exhuma: Quật Mộ Trùng Ma</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="ShowingMovies\Mobile Suit Gundam SEED FREEDOM.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Mobile Suit Gundam SEED Freedom</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="ShowingMovies\DUNE HÀNH TINH CÁT.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Dune: Hành Tinh Cát</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="ShowingMovies\MONKEY MAN BÁO THÙ.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Monkey Man Báo Thù</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="ShowingMovies\MUÔN VỊ NHÂN GIAN.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Muôn Vị Nhân Gian</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="ShowingMovies\NGƯỜI CHẾT TRỞ VỀ.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Người Chết Trở Về</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-sub" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row row2">
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="UpcomingMovies\ANH HÙNG BÀN PHÍM.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Anh Hùng Bàn Phím</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="UpcomingMovies\B4S – TRƯỚC GIỜ “YÊU”.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">B4S - Trước Giờ Yêu</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="UpcomingMovies\BIỆT ĐỘI SĂN MA KỶ NGUYÊN BĂNG GIÁ.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Biệt Đội Săn Ma: Kỷ Nguyên Băng Giá</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="UpcomingMovies\CÁI GIÁ CỦA HẠNH PHÚC.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Cái Giá Của Hạnh Phúc</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="UpcomingMovies\ĐÓA HOA MONG MANH.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Đóa Hoa Mong Manh</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="UpcomingMovies/HÀO QUANG ĐẪM MÁU.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Hào Quang Đẫm Máu</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="UpcomingMovies\MÙA HÈ CỦA LUCA.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Mùa Hè Của LUCA</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="UpcomingMovies\NGÀY TÀN CỦA ĐẾ QUỐC.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Ngày Tàn Của Đế Quốc</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="UpcomingMovies\NGƯỜI BẠN TRONG TƯỞNG TƯỢNG.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Người Bạn Trong Tưởng Tượng</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="UpcomingMovies\QUỶ CÁI.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Quỷ Cái</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="UpcomingMovies\SUGA Agust D TOUR ‘D-DAY’ THE MOVIE.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">SUGA | Agust D TOUR 'D-DAY' THE MOVIE</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="card border-0" style="width: 15; margin: auto;">
+                  <img src="UpcomingMovies\TRÒ CHƠI CHẾT CHÓC.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text">Trò Chơi Chết Chóc</p>
+                    <div>
+                      <button class="btn btn-primary">Đặt vé</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--More Movies-->
+    </div>
+
+    <div class="top-movie2">
+      <h1 class="top-movie-title">Top Phim Đang Chiếu</h1>
+      <script>
+        $(document).ready(function () {
+          $("#owl-carousel3").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            responsive: {
+              0: {
+                items: 1,
+              },
+              600: {
+                items: 2,
+              },
+              1000: {
+                items: 4,
+              },
+            },
+          });
+        });
+      </script>
+      <div id="owl-carousel3" class="owl-carousel owl-theme mt-4">
+        <div class="item">
+          <h4>
+            <div class="box m-auto">
+              <img src="ShowingMovies\MAI.jpg" height="400px" alt="" />
+              <div class="overlay">
+                <h3>Mai</h3>
+                <p>
+                  Mai sinh ra trong một gia đình bất hạnh với người cha nghiện cờ bạc. Ở tuổi đẹp nhất, cô phải trải qua bi kịch khủng khiếp và phải làm đủ mọi việc để kiếm sống. Số phận đưa đẩy khiến cô trở thành một cô gái mát-xa.
+                </p>
+                <a href="">Book now</a>
+              </div>
+            </div>
+          </h4>
+        </div>
+        <div class="item">
+          <div class="box m-auto">
+            <img src="ShowingMovies\GODZILLA X KONG ĐẾ CHẾ MỚI.jpg" height="400px" alt="" />
+            <div class="overlay">
+              <h3>Godzilla x Kong: Đế Chế Mới</h3>
+              <p>
+                Godzilla và Kong toàn năng phải đối mặt với một mối đe dọa khổng lồ ẩn sâu bên trong hành tinh, thách thức chính sự tồn tại của họ và sự sống còn của loài người.
+              </p>
+              <a href="">Book now</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box m-auto">
+            <img src="ShowingMovies\DUNE HÀNH TINH CÁT.jpg" height="400px" alt="" />
+            <div class="overlay">
+              <h3>Dune 2: Hành Tinh Cát</h3>
+              <p>
+                Paul Atreides đến Arrakis sau khi cha anh nhận lời quản lý hành tinh nguy hiểm. Tuy nhiên, sự hỗn loạn xảy ra sau sự phản bội khi các thế lực xung đột để kiểm soát melange, một nguồn tài nguyên quý giá.
+              </p>
+              <a href="">Book now</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box m-auto">
+            <img src="ShowingMovies\MONKEY MAN BÁO THÙ.jpg" height="400px" alt="" />
+            <div class="overlay">
+              <h3>Monkey Man Báo Thù</h3>
+              <p>
+                Một chàng trai trẻ sống sót trong một câu lạc bộ chiến đấu ngầm, đeo mặt nạ khỉ đột và bị đánh đập đẫm máu để kiếm tiền. Sau nhiều năm kìm nén cơn thịnh nộ, anh phát hiện cách thâm nhập vào giới thượng lưu nham hiểm của thành phố.
+              </p>
+              <a href="">Book now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="information container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Bạn hỏi, chúng tôi sẽ trả lời</h2>
+          <br />
+          <h6>Nếu bạn có thắc mắc nào, hãy liên lạc với chúng tôi thông qua email: <a href="mailto:minhnb.23ai@vku.udn.vn">minhnb.23ai@vku.udn.vn</a></h6>
+        </div>
+        <div class="col-lg-8">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Lợi ích của việc mua vé xem phim tại WG
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Nhanh chóng, trực quan, tiết kiệm thời gian và tiện lợi cùng những chương trình khuyến mãi với giá vô cùng cùng hấp dẫn</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Vé xem phim có được đổi trả, hoàn hủy không?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Các vé xem phim khi tra cứu lịch chiếu phim tại WG hiện tại không hỗ trợ đổi trả hay hoàn hủy vé.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Xem phim tại WG có những gì?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Rạp chiếu phim WG đem đến cho bạn trải nghiệm xem phim phê nhất từ dàn loa Dolby Atmos 7.1, kèm màn hình rộng bằng một sân bóng, đủ để khiến bạn mê đắm trong suốt thời gian xem.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center text-lg-start bg-primary-subtle">
+      <section class="">
+        <div class="container text-center pt-4 text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-5 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase mb-4" style="font-weight: bold;"><i class="fas fa-star me-2"></i>Giới thiệu</h6>
+              <p>
+                WG Cinema là rạp chiếu phim với mức giá rẻ nhất thị trường Việt Nam.<br />
+                Cam kết đem lại cho quý khác trải nghiêm xem phim hay nhất.
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase mb-4" style="font-weight: bold;">
+                <i class="fas fa-user me-2"></i>
+                Mạng xã hội
+              </h6>
+              <p>
+                <a href="https://www.facebook.com/joshi.minh52" class="text-reset">
+                  <i class="fab fa-facebook"></i>
+                  Facebook
+                </a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">
+                  <i class="fab fa-twitter"></i>
+                  Twitter
+                </a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xl-3 mx-auto">
+              <h6 class="text-uppercase mb-4" style="font-weight: bold;"><i class="fas fa-phone me-2"></i>Liên Lạc</h6>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                minhnb.23ai@vku.udn.vn
+              </p>
+              <p><i class="fas fa-phone me-3"></i> +84 907 067 721</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
