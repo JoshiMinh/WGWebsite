@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SQL Server Connection</title>
+</head>
+<body>
+    <?php
+    // Connection info
+    $serverName = "JoshiNitro5"; // Replace with the actual IP address or server name
+    $instanceName = "MSSQLSERVER02";
+    $databaseName = "CinemaData";
+    $username = "AdminCinema";
+    $password = "Admin"; // Replace with the actual password
+
+    // Create connection string
+    $connectionString = "sqlsrv:Server=$serverName\\$instanceName;Database=$databaseName";
+
+    try {
+        // Create connection
+        $conn = new PDO($connectionString, $username, $password);
+
+        // Set the PDO error mode to exception
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        echo "<h1>Connection Successful</h1>";
+    } catch (PDOException $e) {
+        echo "<h1>Connection Failed: " . $e->getMessage() . "</h1>";
+    }
+    ?>
+</body>
+</html>
