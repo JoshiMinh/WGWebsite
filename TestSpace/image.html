@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Paths</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Paths</h1>
+    <div>
+        <h2>Folder 1 Images:</h2>
+        <p id="folder1"></p>
+    </div>
+    <div>
+        <h2>Folder 2 Images:</h2>
+        <p id="folder2"></p>
+    </div>
+
+    <script>
+        // Sample data for demonstration. Replace these with actual paths.
+        const folder1Images = [
+            'folder1/image1.jpg',
+            'folder1/image2.jpg',
+            'folder1/image3.jpg'
+        ];
+        const folder2Images = [
+            'folder2/image1.jpg',
+            'folder2/image2.jpg',
+            'folder2/image3.jpg'
+        ];
+
+        // Function to display image paths
+        function displayImagePaths() {
+            const folder1Element = document.getElementById('folder1');
+            const folder2Element = document.getElementById('folder2');
+
+            folder1Element.innerHTML = folder1Images.join('<br>');
+            folder2Element.innerHTML = folder2Images.join('<br>');
+        }
+
+        // Call the function to display image paths
+        displayImagePaths();
+    </script>
+</body>
+</html>
