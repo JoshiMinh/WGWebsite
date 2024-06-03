@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Phim Sắp Chiếu</title>
+    <title>Phim Đang Chiếu</title>
     <link rel="icon" type="image/x-icon" href="WGLogo.ico" />
 
     <link rel="stylesheet" href="style.css" />
@@ -41,10 +41,10 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="UpcomingMovies.html">Phim Sắp Chiếu</a>
+                  <a class="nav-link mx-lg-2" href="ShowingMovies.html">Phim Đang Chiếu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="ShowingMovies.html">Phim Đang Chiếu</a>
+                  <a class="nav-link mx-lg-2" href="UpcomingMovies.html">Phim Sắp Chiếu</a>
                 </li>
                 <li class="nav-item align-self-center">
                   <div class="form-check form-switch">
@@ -66,148 +66,17 @@
       </nav>
     </div>
     <div class="content" style="margin-top: 100px;">
-      <div class="content2 my-3 container">
+      <div class="content2 my-3 container" id="pills-sub">
         <div class="row row1">
-          <div class="col mb-4">
+          <div class="col mb-3">
             <h2>Phim Sắp Chiếu</h2>
           </div>
         </div>
-        <div class="row row2">
-          <!--Upcoming Movies-->
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-0" style="width: 15; margin: auto;">
-              <img src="MoviesUpcoming/Anh Hùng Bàn Phím.jpg" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Anh Hùng Bàn Phím</p>
-                <div>
-                  <button class="btn btn-primary">Đặt vé</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-0" style="width: 15; margin: auto;">
-              <img src="MoviesUpcoming/B4S – Trước Giờ “Yêu”.jpg" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">B4S – Trước Giờ “Yêu”</p>
-                <div>
-                  <button class="btn btn-primary">Đặt vé</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-0" style="width: 15; margin: auto;">
-              <img src="MoviesUpcoming/Biệt Đội Săn Ma Kỷ Nguyên Băng Giá.jpg" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Biệt Đội Săn Ma Kỷ Nguyên Băng Giá</p>
-                <div>
-                  <button class="btn btn-primary">Đặt vé</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-0" style="width: 15; margin: auto;">
-              <img src="MoviesUpcoming/Cái Giá Của Hạnh Phúc.jpg" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Cái Giá Của Hạnh Phúc</p>
-                <div>
-                  <button class="btn btn-primary">Đặt vé</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-0" style="width: 15; margin: auto;">
-              <img src="MoviesUpcoming/Đóa Hoa Mong Manh.jpg" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Đóa Hoa Mong Manh</p>
-                <div>
-                  <button class="btn btn-primary">Đặt vé</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-0" style="width: 15; margin: auto;">
-              <img src="MoviesUpcoming/Hòa Quang Đẫm Máu.jpg" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Hòa Quang Đẫm Máu</p>
-                <div>
-                  <button class="btn btn-primary">Đặt vé</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-0" style="width: 15; margin: auto;">
-              <img src="MoviesUpcoming/Mùa Hè Của Luca.jpg" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Mùa Hè Của Luca</p>
-                <div>
-                  <button class="btn btn-primary">Đặt vé</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-0" style="width: 15; margin: auto;">
-              <img src="MoviesUpcoming/Ngày Tàn Của Đế Quốc.jpg" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Ngày Tàn Của Đế Quốc</p>
-                <div>
-                  <button class="btn btn-primary">Đặt vé</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-0" style="width: 15; margin: auto;">
-              <img src="MoviesUpcoming/Người Bạn Trong Tưởng Tượng.jpg" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Người Bạn Trong Tưởng Tượng</p>
-                <div>
-                  <button class="btn btn-primary">Đặt vé</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-0" style="width: 15; margin: auto;">
-              <img src="MoviesUpcoming/Quỷ Cái.jpg" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Quỷ Cái</p>
-                <div>
-                  <button class="btn btn-primary">Đặt vé</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-0" style="width: 15; margin: auto;">
-              <img src="MoviesUpcoming/SUGA Agust D TOUR ‘D-DAY’ THE MOVIE.jpg" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">SUGA Agust D TOUR ‘D-DAY’ THE MOVIE</p>
-                <div>
-                  <button class="btn btn-primary">Đặt vé</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="card border-0" style="width: 15; margin: auto;">
-              <img src="MoviesUpcoming/Trò Chơi Chết Chóc.jpg" class="card-img-top" />
-              <div class="card-body">
-                <p class="card-text">Trò Chơi Chết Chóc</p>
-                <div>
-                  <button class="btn btn-primary">Đặt vé</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Upcoming Movies-->
+        
+        <div class="row row2" id="showing-movies-container">
         </div>
+        <script src="fetchUpcoming.js"></script>
+
       </div>
     </div>
     <footer class="text-center text-lg-start bg-primary-subtle">

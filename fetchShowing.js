@@ -1,28 +1,22 @@
-const fs = require('fs');
-const path = require('path');
+ // Define the movie card HTML as a template
+ const movieCardTemplate = `
+   <div class="col-lg-3 col-sm-6">
+     <div class="card border-0" style="width: 15; margin: auto;">
+       <img src="MoviesShowing/Abigail.jpg" class="card-img-top" />
+       <div class="card-body">
+         <p class="card-text">Abigail</p>
+         <div>
+           <button class="btn btn-primary">Đặt vé</button>
+         </div>
+       </div>
+     </div>
+   </div>
+ `;
 
-// Define the directory
-const showingDirectory = path.join(__dirname, 'MoviesShowing');
+ // Get the container element
+ const container = document.getElementById('showing-movies-container');
 
-// Function to get jpg files from a directory
-const getJpgFiles = (directory) => {
-    return new Promise((resolve, reject) => {
-        fs.readdir(directory, (err, files) => {
-            if (err) {
-                return reject('Unable to scan directory: ' + err);
-            }
-
-            const jpgFiles = files.filter(file => path.extname(file).toLowerCase() === '.jpg');
-            resolve(jpgFiles);
-        });
-    });
-};
-
-// Get jpg files from the showing directory
-getJpgFiles(showingDirectory)
-    .then((showingImages) => {
-        console.log('MoviesShowing images:', showingImages);
-    })
-    .catch(err => {
-        console.error(err);
-    });
+ // Insert the movie card template 10 times
+ for (let i = 0; i < 10; i++) {
+   container.innerHTML += movieCardTemplate;
+ }
