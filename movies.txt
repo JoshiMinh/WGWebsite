@@ -1,0 +1,27 @@
+MoviesShowing\Abigail.jpg
+MoviesShowing\DUNE Phần Hai.jpg
+MoviesShowing\Exhuma Quật Mộ Trùng Ma.jpg
+MoviesShowing\Godzilla X Kong Đế Chế Mới.jpg
+MoviesShowing\Kung Fu Panda 4.jpg
+MoviesShowing\Mai.jpg
+MoviesShowing\Mobile Suit Gundam SEED FREEDOM.jpg
+MoviesShowing\Monkey Man.jpg
+MoviesShowing\Muôn Vị Nhân Gian.jpg
+MoviesShowing\Người Chết Trở Về.jpg
+MoviesShowing\Quỷ Thuật.jpg
+MoviesShowing\Sáng Đèn.jpg
+MoviesShowing\Thanh Xuân 18x2 Lữ Trình Hướng Về Em.jpg
+MoviesShowing\Điềm Báo Của Quỷ.jpg
+MoviesShowing\Đền Mạng.jpg
+MoviesUpcoming\Anh Hùng Bàn Phím.jpg
+MoviesUpcoming\B4S – Trước Giờ “Yêu”.jpg
+MoviesUpcoming\Biệt Đội Săn Ma Kỷ Nguyên Băng Giá.jpg
+MoviesUpcoming\Cái Giá Của Hạnh Phúc.jpg
+MoviesUpcoming\Hòa Quang Đẫm Máu.jpg
+MoviesUpcoming\Mùa Hè Của Luca.jpg
+MoviesUpcoming\Ngày Tàn Của Đế Quốc.jpg
+MoviesUpcoming\Người Bạn Trong Tưởng Tượng.jpg
+MoviesUpcoming\Quỷ Cái.jpg
+MoviesUpcoming\SUGA Agust D TOUR ‘D-DAY’ THE MOVIE.jpg
+MoviesUpcoming\Trò Chơi Chết Chóc.jpg
+MoviesUpcoming\Đóa Hoa Mong Manh.jpg
