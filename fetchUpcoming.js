@@ -2,43 +2,45 @@
 fetch('Movies.txt')
   .then(response => response.text())
   .then(data => {
-    const upcomingMovieData = [];
+    const movieData = [];
     const lines = data.split('\n');
-
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i].trim();
-      if (line.startsWith('MoviesUpcoming\\')) {
-        const parts = line.split('\\');
-        const name = parts[1].replace(/.jpg/g, '');
-        const image = `MoviesUpcoming/${parts[1]}`;
-        upcomingMovieData.push({ name, image });
+      if (line !== '') {
+        const parts = line.split(' - ');
+        const movieInfo = parts[0].split('\\');
+        const category = movieInfo[0];
+        if (category === 'MoviesUpcoming') {
+          const imageFileName = movieInfo[1];
+          const movieTitle = imageFileName.replace(/.jpg/g, '');
+          const youtubeLink = parts[1] || '';
+
+          movieData.push({ category, movieTitle, imageFileName, youtubeLink });
+        }
       }
     }
 
-    // Define the upcoming movie card HTML as a template function
-    const upcomingMovieCardTemplate = (movie) => `
+    // Define the movie card HTML as a template function
+    const movieCardTemplate = (movie) => `
       <div class="col-lg-3 col-sm-6">
         <div class="card border-0" style="width: 15; margin: auto;">
-          <img src="${movie.image}" class="card-img-top" />
+          <img src="${movie.category}/${movie.imageFileName}" class="card-img-top" />
           <div class="card-body">
-            <p class="card-text">${movie.name}</p>
-            <div>
-              <button class="btn btn-primary">Đặt vé</button>
-            </div>
+            <p class="card-text text-center">${movie.movieTitle}</p>
+            ${movie.youtubeLink ? `<div>
+              <a href="${movie.youtubeLink}" target="_blank" class="btn btn-primary">Xem Trailer</a>
+            </div>` : ''}
           </div>
         </div>
       </div>
     `;
 
     // Get the container element
-    const upcomingContainer = document.getElementById('pills-sub');
+    const container = document.getElementById('upcoming-movies-container');
 
-    // Get the row2 element inside the container
-    const row2 = upcomingContainer.querySelector('.row2');
-
-    // Generate the HTML for each upcoming movie and append it to the row2 element
-    upcomingMovieData.forEach(movie => {
-      row2.innerHTML += upcomingMovieCardTemplate(movie);
+    // Generate the HTML for each movie and append it to the container
+    movieData.forEach(movie => {
+      container.innerHTML += movieCardTemplate(movie);
     });
   })
   .catch(error => console.error('Error:', error));
