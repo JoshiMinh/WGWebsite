@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-const apiKey = 'AIzaSyBZEQlM2UNO9ni0l62DwuvQ9JVfo55Am-0'; // Replace with your YouTube Data API key
+const apiKey = 'AIzaSyDCDoSiW9-_PCdxlph96TRQpW1naXde_cg'; // Replace with your YouTube Data API key
 const directoryPaths = ['MoviesShowing', 'MoviesUpcoming'];
 const outputFile = 'movies.txt';
 
