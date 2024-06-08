@@ -377,7 +377,7 @@ body {
   margin-top: 50px;
 }
 .box  {
-  width: 80%;
+  width: 310px;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -411,7 +411,7 @@ body {
 .overlay h3 {
   font-weight: 500;
   margin-bottom: 5px;
-  margin-top: 80%;
+  /* margin-top: 90%; */
   font-family: bebas neue;
   font-size: 30px;
   letter-spacing: 2px;

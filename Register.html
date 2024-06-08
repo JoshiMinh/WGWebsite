@@ -27,43 +27,44 @@
     </style>
   </head>
   <body>
+    <script src="validation.js"></script>
     <div class="container">
-      <div class="card bg-dark text-white">
+      <div class="card bg-dark ">
         <div class="card-body">
           <h1 class="text-center mb-4">
             <a class="text-decoration-none" href="index.html">
               <img src="WGLogo.png" alt="WG Logo" width="50" />
             </a>
-            <span style="color: #2056e0; font-weight: bolder;">Register</span>
+            <span style="color: #2056e0; font-weight: bolder;">Đăng ký</span>
           </h1>
           <form>
             <div class="mb-3 input-group">
-              <span class="input-group-text bg-dark text-white"><i class="fa fa-user"></i></span>
-              <input type="text" class="form-control bg-dark text-white" placeholder="Username" required />
+              <span class="input-group-text bg-dark "><i class="fa fa-user"></i></span>
+              <input type="text" name="username" oninvalid="InvalidUser(this);" class="form-control bg-dark " placeholder="Tên đăng nhập" required/>
             </div>
             <div class="mb-3 input-group">
-              <span class="input-group-text bg-dark text-white"><i class="fa fa-envelope"></i></span>
-              <input type="email" class="form-control bg-dark text-white" placeholder="Email" required />
+              <span class="input-group-text bg-dark "><i class="fa fa-envelope"></i></span>
+              <input name="email" oninvalid="InvalidEmail(this);"  type="email" class="form-control bg-dark " placeholder="Email" required />
             </div>
             <div class="mb-3 input-group">
-              <span class="input-group-text bg-dark text-white"><i class="fa fa-lock"></i></span>
-              <input type="password" class="form-control bg-dark text-white" placeholder="Password" required />
+              <span class="input-group-text bg-dark "><i class="fa fa-lock"></i></span>
+              <input type="password" id="password" name="password"  oninvalid="InvalidPass(this);" class="form-control bg-dark " placeholder="Mật khẩu" required/>
             </div>
             <div class="mb-3 input-group">
-              <span class="input-group-text bg-dark text-white"><i class="fa fa-lock"></i></span>
-              <input type="password" class="form-control bg-dark text-white" placeholder="Confirm Password" required />
+              <span class="input-group-text bg-dark "><i class="fa fa-lock"></i></span>
+              <input type="password" oninput="InvalidConfirmPass();" name="confirm_password" id="confirm_password" class="form-control bg-dark " placeholder="Xác nhận mật khẩu" required="required"/>
             </div>
             <div class="mb-3 text-center">
-              <a href="Login.html" class="text-decoration-none text-white">Have an account?</a>
+              <a href="Login.html" class="text-decoration-none ">Bạn đã có tài khoản?</a>
             </div>
-            <button type="submit" class="btn btn-primary">Register</button>
+            <button type="submit" class="btn btn-primary">Đăng ký</button>
           </form>
-          <hr class="text-white" />
+          <hr class="" />
           <div class="text-center">
-            <h5 class="mb-3 text-white">Or Register with</h5>
-            <a href="#" class="mx-2 text-white"><i class="fab fa-google fa-2x"></i></a>
-            <a href="#" class="mx-2 text-white"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#" class="mx-2 text-white"><i class="fab fa-twitter fa-2x"></i></a>
+            <h5 class="mb-3 ">Hoặc đăng ký với</h5>
+            <a href="#" class="mx-2 "><i class="fab fa-google fa-2x"></i></a>
+            <a href="#" class="mx-2 "><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" class="mx-2 "><i class="fab fa-twitter fa-2x"></i></a>
           </div>
         </div>
       </div>
