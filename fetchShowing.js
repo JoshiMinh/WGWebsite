@@ -1,27 +1,28 @@
 fetch('Movies.txt')
   .then(response => response.text())
   .then(data => {
-    const movieData = data.split('\n').map(line => {
-      const [info, youtubeLink = ''] = line.trim().split(' - ');
+    const movieData = data.split('\n').map((line, index) => {
+      const [info] = line.trim().split(' - ');
       const [category, imageFileName] = info.split('\\');
       if (category === 'MoviesShowing') {
         const movieTitle = imageFileName.replace(/.jpg/g, '');
-        return { category, movieTitle, imageFileName, youtubeLink };
+        return { category, movieTitle, imageFileName, lineNumber: index + 1 };
       }
     }).filter(Boolean);
 
     const movieCardTemplate = (movie) => `
       <div class="col-lg-3 col-sm-6">
         <div class="card border-0" style="width: 15; margin: auto;">
-          ${movie.youtubeLink ? `<a href="${movie.youtubeLink}" target="_blank">
-            <img src="${movie.category}/${movie.imageFileName}" class="card-img-top"/>
-          </a>` : `<img src="${movie.category}/${movie.imageFileName}" class="card-img-top"/>`}
+          <a href="MovieInfo.html" onClick="storeMovieInfo(${movie.lineNumber})">
+            <img src="${movie.category}/${movie.imageFileName}" class="card-img-top" />
+          </a>
           <div class="card-body">
             <p class="card-text text-center">${movie.movieTitle}</p>
           </div>
         </div>
         <div class="d-flex justify-content-center align-items-center">
-        <button class="btn btn-primary mb-3">Đặt Vé</button></div>
+          <button class="btn btn-primary mb-3">Đặt Vé</button>
+        </div>
       </div>
     `;
 
@@ -29,3 +30,7 @@ fetch('Movies.txt')
     container.innerHTML = movieData.map(movieCardTemplate).join('');
   })
   .catch(error => console.error('Error:', error));
+
+function storeMovieInfo(lineNumber) {
+  localStorage.setItem('clickedMovieLineNumber', lineNumber);
+}
