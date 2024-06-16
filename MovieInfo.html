@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="col-lg-9">
-          <h2 id="movie-title">MovieTitle</h2>
+          <h2 id="movie-title" class="mt-3">MovieTitle</h2>
           <p></p>
           <ul>
             <li>Thể loại: Hành động, kịch tính</li>
@@ -83,7 +83,6 @@
               mối quan hệ hòa bình với loài người. Còn Godzilla bảo hộ thế giới mặt đất trước sự tấn công của một số Titan (siêu quái vật).
             </li>
           </ul>
-          <p id="line-number"></p>
         </div>
         <button class="btn btn-primary m-auto" style="width: 30%; margin-top: 30px;">Đặt vé ngay</button>
       </div>
@@ -149,7 +148,6 @@
             const clickedMovie = movieData.find(movie => movie.lineNumber === parseInt(lineNumber));
 
             if (clickedMovie) {
-              document.getElementById('line-number').textContent = `Clicked movie line number: ${lineNumber}`;
               document.getElementById('movie-title').textContent = clickedMovie.movieTitle;
               document.getElementById('movie-image').src = `${clickedMovie.category}/${clickedMovie.imageFileName}`;
               document.getElementById('youtube-iframe').src = `${clickedMovie.youtubeLink}?autoplay=1`;
