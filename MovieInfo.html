@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="WG Cinema - Your destination for the best movie experience in Vietnam." />
-    <meta name="keywords" content="WG Cinema, Movies, Vietnam, Cheap Tickets, Movie Experience" />
-    <meta name="author" content="WG Cinema" />
-    <title>MovieTitle | WG Cinema</title>
+    <title class="movie-title">Movie Title</title>
     <link rel="icon" type="image/x-icon" href="WGLogo.ico" />
 
     <!-- Using only one version of Bootstrap and Font Awesome for optimization -->
@@ -67,7 +65,7 @@
           </div>
         </div>
         <div class="col-lg-9">
-          <h2 id="movie-title" class="mt-3">MovieTitle</h2>
+          <h2 class="movie-title mt-3">Movie Title</h2>
           <ul>
             <li>Ngày Khởi Chiếu: <strong id="release-date"></strong> </li>
             <li>Giới Hạn Độ Tuổi: <strong id="age-restriction"></strong> </li>
@@ -137,7 +135,11 @@
                 const [category, imageFileName] = path.split('\\');
                 const movieTitle = imageFileName.replace(/\.jpg$/, '');
 
-                document.getElementById('movie-title').textContent = movieTitle;
+                const movieTitleElements = document.getElementsByClassName('movie-title');
+                for (let i = 0; i < movieTitleElements.length; i++) {
+                  movieTitleElements[i].textContent = movieTitle;
+                }
+
                 document.getElementById('movie-image').src = `${category}/${imageFileName}`;
                 document.getElementById('youtube-iframe').src = `${youtubeLink}?autoplay=1`;
 
