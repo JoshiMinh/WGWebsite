@@ -56,7 +56,7 @@
 
     <div class="movies" style="margin-top: 80px;">
       <div class="container-fluid">
-        <iframe id="youtube-iframe" width="100%" height="600px" allowfullscreen></iframe>
+        <iframe id="youtube-iframe" width="100%" height="600px" src=""></iframe>
       </div>
       <div id="showing-movies-container" class="row container m-auto" style="padding-top: 50px;">
         <div class="col-lg-3">
@@ -141,7 +141,7 @@
                 }
 
                 document.getElementById('movie-image').src = `${category}/${imageFileName}`;
-                document.getElementById('youtube-iframe').src = `${youtubeLink}?autoplay=1`;
+                document.getElementById('youtube-iframe').src = `${youtubeLink}`;
 
                 document.getElementById('release-date').innerHTML = `${releaseDate || 'N/A'}`;
                 
