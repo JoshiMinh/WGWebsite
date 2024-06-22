@@ -23,12 +23,24 @@
 
     <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="./owlcarousel/assets/owl.theme.default.css" />
+    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <!-- Sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <script src="./owlcarousel/owl.carousel.min.js"></script>
     <script src="fetchmovies.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body style="transition: 0.5s;">
+    <script src="particles/particles.js"></script>
+    <script src="particles/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="theme.js"></script>
@@ -176,9 +188,9 @@
             </div>
           </div>
           <script src="fetchShowing.js"></script>
-
+          
           <div class="tab-pane fade" id="pills-sub" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <div class="row row2" id="upcoming-movies-container">
+            <div class="row row2" id="upcoming-movies-container" >
               <!--Upcoming Movies-->
             </div>
           </div>
@@ -214,7 +226,9 @@
         });
       </script>
       <div id="owl-carousel3" class="owl-carousel owl-theme mt-4 pb-4">
-        <div class="item">
+        <div class="item" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
           <h4>
             <div class="box m-auto">
               <img src="MoviesShowing/Furiosa Câu Truyện Max Điên.jpg" height="400px" alt="" />
@@ -228,31 +242,37 @@
             </div>
           </h4>
         </div>
-        <div class="item">
+        <div class="item" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
           <div class="box m-auto">
             <img src="MoviesShowing/Hành Tinh Khỉ Vương Quốc Mới.jpg" height="400px" alt="" />
             <div class="overlay">
               <h3>Hành Tinh Khỉ Vương Quốc Mới</h3>
               <p>
-                Lấy bối cảnh nhiều đời sau sự ra đi của Vua Khỉ Caesar, hành tinh này là nơi loài khỉ thống trị, còn loài người dần lui về trong bóng tối. Khi một thủ lĩnh khỉ có tên Proximus Caesar xây dựng đế chế của mình, chú khỉ trẻ tuổi Noa bắt đầu một hành trình gian khổ, đặt câu hỏi về tất cả những gì anh ta đã biết về quá khứ và đưa ra những lựa chọn định hình lại tương lai cho cả loài khỉ và loài người.
+                Lấy bối cảnh nhiều đời sau sự ra đi của Vua Khỉ Caesar, một chú vượn trẻ bắt đầu cuộc hành trình khiến cậu đặt câu hỏi về tất cả những gì cậu đã được dạy về quá khứ và đưa ra những lựa chọn sẽ xác định tương lai cho loài khỉ cũng như con người.
               </p>
               <a href="">Đặt Vé Ngay</a>
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
           <div class="box m-auto">
             <img src="MoviesShowing/Nobita Và Bản Giao Hưởng Địa Cầu.jpg" height="400px" alt="" />
             <div class="overlay">
               <h3>Nobita Và Bản Giao Hưởng Địa Cầu</h3>
               <p>
-                TÁC PHẨM KỶ NIỆM 90 NĂM FUJIKO F FUJIO Chuẩn bị cho buổi hòa nhạc ở trường, Nobita đang tập thổi sáo - nhạc cụ mà cậu dở tệ. Thích thú trước nốt "No" lạc quẻ của Nobita, Micca - cô bé bí ẩn đã mời Doraemon, Nobita cùng nhóm bạn đến "Farre" - Cung điện âm nhạc tọa lạc trên một hành tinh nơi âm nhạc sẽ hóa thành năng lượng. Nhằm cứu cung điện này, Micca đang tìm kiếm "virtuoso" - bậc thầy âm nhạc sẽ cùng mình biểu diễn!
+                Đôrêmon và những người bạn thực hiện chuyến phiêu lưu để gặp gỡ những người bạn mới, kết nối mọi người bằng âm nhạc và cứu thế giới khỏi khủng hoảng. Liệu những người bạn nhỏ có thể cứu được "tương lai âm nhạc" và cả địa cầu này?
               </p>
               <a href="">Đặt Vé Ngay</a>
             </div>
           </div>
         </div>
-        <div class="item">
+        <div class="item" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
           <div class="box m-auto">
             <img src="MoviesShowing/Lật Mặt 7 Một Điều Ước.jpg" height="400px" alt="" />
             <div class="overlay">
@@ -266,6 +286,11 @@
         </div>
       </div>
     </div>
+    <script>
+      AOS.init({
+        duration: 3000,
+      });
+    </script>
     <div class="information container">
       <div class="row">
         <div class="col-lg-4">

@@ -31,6 +31,7 @@ body {
   background-color: rgba(var(--bs-body-bg-rgb), 1.5); /* Adjust the alpha value to make it darker */
   transition: 0.3s background-color; /* Fixing the transition property */
   padding: 0.5rem;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .header .navbar-toggler {

@@ -20,6 +20,17 @@ fetch('Movies.txt')
             <p class="card-text text-center">${movie.movieTitle}</p>
           </div>
         </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <a href="#qr-code-${movie.lineNumber}" class="btn btn-primary mb-3" data-fancybox>Đặt Vé</a>
+        </div>
+      </div>
+      <div style="display: none;" id="qr-code-${movie.lineNumber}">
+        <h3 style="text-align: center; color: #000;">Số tiền cần thanh toán: 70.000 VNĐ</h3>
+        <img width="600px" src="QR-code.jpg" alt="QR Code" />
+        <div class="d-flex justify-content-center mt-3">
+              <button class="btn btn-success mx-2" onclick="confirmBooking()">Xác nhận</button>
+              <button class="btn btn-danger mx-2" onclick="$.fancybox.close()">Hủy</button>
+        </div>
       </div>
     `;
 
@@ -30,4 +41,21 @@ fetch('Movies.txt')
 
 function storeMovieInfo(lineNumber) {
   localStorage.setItem('clickedMovieLineNumber', lineNumber);
+}
+$(document).ready(function() {
+  $('[data-fancybox]').fancybox({
+    buttons: [
+      "zoom",
+      "close"
+    ]
+  });
+});
+function confirmBooking() {
+  Swal.fire({
+    icon: 'success',
+    title: 'Đã đặt vé thành công',
+    showConfirmButton: false,
+    timer: 2000
+  });
+  $.fancybox.close();
 }
