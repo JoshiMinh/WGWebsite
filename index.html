@@ -33,18 +33,16 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     <script src="./owlcarousel/owl.carousel.min.js"></script>
-    <script src="fetchmovies.js"></script>
+    <script src="js/fetchmovies.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body style="transition: 0.5s;">
-    <script src="particles/particles.js"></script>
-    <script src="particles/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="theme.js"></script>
-    <div class="header">
+    <script src="js/theme.js"></script>
+    <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand me-auto text-light" href="index.html">
@@ -58,6 +56,9 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link mx-lg-2" href="UpcomingMovies.html">Phim Sắp Chiếu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="aboutus.html">Về chúng tôi</a>
                 </li>
                 <li class="nav-item align-self-center">
                   <div class="form-check form-switch">
@@ -76,7 +77,7 @@
           </button>
         </div>
       </nav>
-    </div>
+    </header>
     <div class="content">
       <div class="content1">
         <!-- Slider1 -->
@@ -187,14 +188,14 @@
               <!--Showwing Movies-->
             </div>
           </div>
-          <script src="fetchShowing.js"></script>
+          <script src="js/fetchShowing.js"></script>
           
           <div class="tab-pane fade" id="pills-sub" role="tabpanel" aria-labelledby="pills-profile-tab">
             <div class="row row2" id="upcoming-movies-container" >
               <!--Upcoming Movies-->
             </div>
           </div>
-          <script src="fetchUpcoming.js"></script>
+          <script src="js/fetchUpcoming.js"></script>
 
         </div>
       </div>

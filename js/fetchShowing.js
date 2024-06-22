@@ -4,7 +4,7 @@ fetch('Movies.txt')
     const movieData = data.split('\n').map((line, index) => {
       const [info] = line.trim().split(' - ');
       const [category, imageFileName] = info.split('\\');
-      if (category === 'MoviesUpcoming') {
+      if (category === 'MoviesShowing') {
         const movieTitle = imageFileName.replace(/.jpg/g, '');
         return { category, movieTitle, imageFileName, lineNumber: index + 1 };
       }
@@ -26,7 +26,7 @@ fetch('Movies.txt')
       </div>
       <div style="display: none;" id="qr-code-${movie.lineNumber}">
         <h3 style="text-align: center; color: #000;">Số tiền cần thanh toán: 70.000 VNĐ</h3>
-        <img width="600px" src="QR-code.jpg" alt="QR Code" />
+        <img width="600px" src="img/QR-code.jpg" alt="QR Code" />
         <div class="d-flex justify-content-center mt-3">
               <button class="btn btn-success mx-2" onclick="confirmBooking()">Xác nhận</button>
               <button class="btn btn-danger mx-2" onclick="$.fancybox.close()">Hủy</button>
@@ -34,7 +34,7 @@ fetch('Movies.txt')
       </div>
     `;
 
-    const container = document.getElementById('upcoming-movies-container');
+    const container = document.getElementById('showing-movies-container');
     container.innerHTML = movieData.map(movieCardTemplate).join('');
   })
   .catch(error => console.error('Error:', error));

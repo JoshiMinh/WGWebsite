@@ -395,3 +395,27 @@ body {
 .information {
   margin: 50px 0;
 }
+
+/* About */
+.about h1 {
+  margin-top: 50px;
+}
+
+.about-why .card {
+  cursor: pointer;
+  transition: .5s;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-why .card:hover {
+  transform: scale(1.1);
+}
+
+/* Map */
+.map {
+  
+}
+.map iframe {
+  width: 100%;
+  height: 500px;
+}

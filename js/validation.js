@@ -11,7 +11,7 @@ function InvalidEmail(textbox) {
 
 function InvalidUser(textbox) {
     if (textbox.value === '') { 
-        textbox.setCustomValidity('Bạn phải nhập username');
+        textbox.setCustomValidity('Bạn phải nhập tên đăng nhập');
     } else {
         textbox.setCustomValidity(''); 
     } 
