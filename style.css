@@ -50,7 +50,11 @@ body {
   color: #0c76f7;
   font-weight: 500;
 }
+.nav-link.active,
+.nav-link .active {
+  transition: .5s;
 
+}
 .header .nav-link:hover,
 .nav-link.active,
 .nav-link .active {
@@ -237,6 +241,7 @@ body {
 
 .top-movie .card:hover {
   box-shadow: 4px 4px 15px;
+  transform: scale(1.1);
 }
 
 .top-movie .item {
@@ -418,4 +423,53 @@ body {
 .map iframe {
   width: 100%;
   height: 500px;
+}
+
+/* discount */
+.background-overlay {
+  height: 150px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 30px;
+  margin: 10px 0;
+  transition: .4s;
+  cursor: pointer;
+}
+.background-overlay:hover {
+  transform: scale(1.1);
+}
+.background-overlay1 {
+  background-image: url('img/hoc-sinh.jpg');
+  border-radius: 30px;
+}
+.background-overlay2 {
+  background-image: url('img/Ghe-ngoi.jpg');
+  border-radius: 30px;
+}
+.background-overlay3 {
+  background-image: url('img/movie-list.jpeg');
+  border-radius: 30px;
+}
+
+.background-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(28, 35, 65, 0.8);
+  border-radius: 30px;
+}
+.text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: x-large;
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
