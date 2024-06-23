@@ -27,6 +27,14 @@
     <!-- Sweetalert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/theme.js"></script>
+    <style>
+      .showtimes-container {
+        margin-top: 30px;
+      }
+      .showtime-buttons .btn {
+        margin: 5px;
+      }
+    </style>
   </head>
 
   <body>
@@ -83,8 +91,46 @@
             <li>Giới Hạn Độ Tuổi: <strong id="age-restriction"></strong> </li>
           </ul>
           <p id="description"></p>
+          <div id="showtimes" class="showtimes-container">
+            <h4 class="mt-4">Chọn suất chiếu</h4>
+            <div class="btn-group showtime-buttons" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-primary" data-day="1" data-time="14:00">Thứ 2 - 14:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="1" data-time="20:00">Thứ 2 - 20:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="1" data-time="22:00">Thứ 2 - 22:00</button>
+            </div>
+            <div class="btn-group showtime-buttons" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-primary" data-day="2" data-time="14:00">Thứ 3 - 14:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="2" data-time="20:00">Thứ 3 - 20:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="2" data-time="22:00">Thứ 3 - 22:00</button>
+            </div>
+            <div class="btn-group showtime-buttons" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="14:00">Thứ 4 - 14:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="20:00">Thứ 4 - 20:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="22:00">Thứ 4 - 22:00</button>
+            </div>
+            <div class="btn-group showtime-buttons" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="14:00">Thứ 5 - 16:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="20:00">Thứ 5 - 20:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="22:00">Thứ 5 - 22:00</button>
+            </div>
+            <div class="btn-group showtime-buttons" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="14:00">Thứ 6 - 14:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="20:00">Thứ 6 - 20:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="22:00">Thứ 6 - 22:00</button>
+            </div>
+            <div class="btn-group showtime-buttons" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="14:00">Thứ 7 - 14:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="20:00">Thứ 7 - 20:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="22:00">Thứ 7 - 22:00</button>
+            </div>
+            <div class="btn-group showtime-buttons" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="14:00">Chủ nhật - 14:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="20:00">Chủ nhật - 20:00</button>
+              <button type="button" class="btn btn-outline-primary" data-day="3" data-time="22:00">Chủ nhật - 22:00</button>
+            </div>
+          </div>
         </div>
-        <button class="btn btn-primary m-auto" style="width: 30%; margin-top: 30px;" onclick="openQRCodeModal()">Đặt vé ngay</button>
+        <button class="btn btn-primary m-auto mt-2" style="width: 30%; margin-top: 30px;" onclick="openQRCodeModal()">Đặt vé ngay</button>
       </div>
       <div style="display: none;" id="qr-code-modal">
         <h3 style="text-align: center; color: #000;">Số tiền cần thanh toán: 70.000 VNĐ</h3>
@@ -146,7 +192,16 @@
             "close"
           ],
         });
+
+        let selectedShowtime = null;
+
+        $('.showtime-buttons .btn').click(function() {
+          $('.showtime-buttons .btn').removeClass('btn-primary').addClass('btn-outline-primary');
+          $(this).removeClass('btn-outline-primary').addClass('btn-primary');
+          selectedShowtime = $(this).data('day') + ' - ' + $(this).data('time');
+        });
       });
+
       function confirmBooking() {
         Swal.fire({
           icon: 'success',
@@ -156,6 +211,7 @@
         });
         $.fancybox.close();
       }
+
       function openQRCodeModal() {
         $.fancybox.open({
           src: '#qr-code-modal',
