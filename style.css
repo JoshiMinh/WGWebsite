@@ -28,8 +28,8 @@ body {
 
 .header .navbar {
   height: 80px;
-  background-color: rgba(var(--bs-body-bg-rgb), 1.5); /* Adjust the alpha value to make it darker */
-  transition: 0.3s background-color; /* Fixing the transition property */
+  background-color: rgba(var(--bs-body-bg-rgb), 1.5);
+  transition: 0.3s background-color;
   padding: 0.5rem;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
@@ -67,6 +67,25 @@ body {
 
 .header .member-dropdown {
   display: none;
+}
+
+@media (max-width: 353px) {
+  .header .right-bt-sign {
+    display: none;
+  }
+  .header .left-bt-login {
+  border-radius: 50px;
+  }
+}
+@media (max-width: 261px) {
+  .header .right-bt-sign {
+    display: none;
+  }
+  .header .left-bt-login {
+    border-radius: 50px;
+    font-size: 10px;
+    padding: 13 px;
+  }
 }
 
 .content1 {
@@ -472,4 +491,25 @@ body {
   position: relative;
   z-index: 1;
   text-align: center;
+}
+
+/* MovieInfo */
+.showtimes-container {
+  margin-top: 30px;
+}
+
+.showtime-buttons .btn {
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  #qr-code-modal {
+    width: 100% !important;
+    padding: 10px;
+  }
+
+  #qr-code-modal img {
+    width: 100% !important;
+    height: auto;
+  }
 }
