@@ -30,7 +30,7 @@ function fetchYouTubeUrl(query) {
                     if (videos.length > 0) {
                         const firstVideo = videos[0];
                         const videoId = firstVideo.id.videoId;
-                        const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+                        const videoUrl = `https://www.youtube.com/embed/v=${videoId}`;
                         resolve(videoUrl);
                     } else {
                         resolve('No video found');
